@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PaisModule } from './pais/pais.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [ AppComponent ],
-  imports:      [ BrowserModule, FormsModule, SharedModule, PaisModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, SharedModule, PaisModule ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
