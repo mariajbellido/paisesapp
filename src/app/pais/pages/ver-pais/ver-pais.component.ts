@@ -7,11 +7,18 @@ import { PaisService } from '../services/pais.service';
 @Component({
   selector: 'app-ver-pais',
   templateUrl: './ver-pais.component.html',
+  styles: [
+    `
+      span {
+        margin-right: 10px
+      }
+    `
+  ]
   
 })
 export class VerPaisComponent implements OnInit {
 
-  pais!: Country[];
+  pais: Country[] = [];
 
   constructor( 
     private activatedRoute: ActivatedRoute,
